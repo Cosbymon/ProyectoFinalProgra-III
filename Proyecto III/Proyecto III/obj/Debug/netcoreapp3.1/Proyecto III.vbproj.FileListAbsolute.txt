@@ -1,0 +1,47 @@
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto_III.Inicio.resources
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto_III.Resources.resources
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto_III.Usuario.resources
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto III.vbproj.GenerateResource.cache
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto III.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto III.AssemblyInfoInputs.cache
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto III.AssemblyInfo.vb
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto III.vbproj.CoreCompileInputs.cache
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\Proyecto III.exe
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\Proyecto III.deps.json
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\Proyecto III.runtimeconfig.json
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\Proyecto III.runtimeconfig.dev.json
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\Proyecto III.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\Proyecto III.pdb
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto III.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto III.pdb
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto III.genruntimeconfig.cache
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto_III.Pacientes.resources
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto_III.MenuP.resources
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\System.Data.OleDb.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.OleDb.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto III.vbproj.CopyComplete
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto_III.Citas.resources
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto_III.FichaNiños.resources
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto III.vbproj.AssemblyReference.cache
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto_III.FichaAdulto.resources
+C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Proyecto III\Proyecto III\obj\Debug\netcoreapp3.1\Proyecto_III.Reportes.resources
