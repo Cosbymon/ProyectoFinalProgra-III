@@ -21,7 +21,7 @@ Public Class Citas
             Dim dt As New DataTable
             Dim da As New OleDb.OleDbDataAdapter
             con.Open()
-            sql = "Select * from Usuarios"
+            sql = "Select * from Citas"
             cmd.Connection = con
             cmd.CommandText = sql
             da.SelectCommand = cmd
@@ -41,17 +41,17 @@ Public Class Citas
         cadena.ConnectionString = ("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Base de datos Proyecto.accdb")
 
         Dim consults As String
-        Dim oda As New OleDbDataAdapter
+        Dim odap As New OleDbDataAdapter
         Dim ods As DataSet
         Dim check As Byte
 
 
-        If TextNom.Text <> " " Then
+        If NombreCitas.Text <> " " Then
 
-            consults = "Select *From Citas WHERE Nombre= '" & TextNom.Text & " '"
-            oda = New OleDbDataAdapter(consults, cadena)
+            consults = "Select *From Citas WHERE Nombre= '" & NombreCitas.Text & " '"
+            odap = New OleDbDataAdapter(consults, cadena)
             ods = New DataSet
-            oda.Fill(ods, "Citas")
+            odap.Fill(ods, "Citas")
             check = ods.Tables("Citas").Rows.Count
 
 
@@ -60,15 +60,15 @@ Public Class Citas
                 '_________________________
 
                 '"',Nombre='" & TextNombre.Text &
-                If TextNom.Text <> " " Then
+                If NombreCitas.Text <> " " Then
 
                     Try
                         cadena.Open()
-                        actualizar = "Update citas SET Nombre ='" & TextNom.Text &
-                            "',Nombre='" & TextNom.Text &
-                            "',Fecha='" & DateTimePicker1.Text &
-                            "',Motivo='" & TextMot.Text &
-                            "' Telefono ='" & TextTel.Text & "'"
+                        actualizar = "Update Citas SET Nombre ='" & NombreCitas.Text &
+                             "',Nombre='" & NombreCitas.Text &
+                            "',Fecha='" & CalendarioCitas.Text &
+                            "',Telefono='" & TelefonoCitas.Text &
+                            "',Motivo='" & MotivoCitas.Text & "'"
 
                         comando = New OleDbCommand(actualizar, cadena)
                         comando.ExecuteNonQuery()
@@ -88,11 +88,11 @@ Public Class Citas
                 cadena.Close()
             Else
 
-                If (TextNom.Text <> "") Then
+                If (NombreCitas.Text <> "") Then
 
                     Try
                         con.Open()
-                        sql = "INSERT INTO Citas (Nombre,Fecha,MotivoCita,Telefono) values ('" & TextNom.Text & "', '" & DateTimePicker1.Text & "', '" & TextMot.Text & "', '" & TextTel.Text & "' );"
+                        sql = "INSERT INTO Citas (Nombre,Telefono,Fecha,Motivo) values ('" & NombreCitas.Text & "', '" & TelefonoCitas.Text & "', '" & CalendarioCitas.Text & "', '" & MotivoCitas.Text &"' );"
                         cmd.Connection = con
                         cmd.CommandText = sql
 
@@ -127,7 +127,7 @@ Public Class Citas
         sqll = "Select *From Citas"
         Dim adapt As New OleDb.OleDbDataAdapter(sqll, cadena)
         Dim obtenerdatos As New DataSet
-        Dim v = adapt.Fill(obtenerdatos, "Nombre")
+        adapt.Fill(obtenerdatos, "Nombre")
         DataGridView1.DataSource = obtenerdatos
         DataGridView1.DataMember = "Nombre"
         cadena.Close()
@@ -138,9 +138,9 @@ Public Class Citas
 
     Private Sub limpiar()
 
-        TextNom.Clear()
-        TextMot.Clear()
-        TextTel.Clear()
+        NombreCitas.Clear()
+        MotivoCitas.Clear()
+        TelefonoCitas.Clear()
 
 
     End Sub
@@ -156,24 +156,24 @@ Public Class Citas
         cadena.Open()
 
         Dim consults As String
-        Dim oda As New OleDbDataAdapter
+        Dim odap As New OleDbDataAdapter
         Dim ods As DataSet
         Dim check As Byte
 
         If TextBuscadorCitas.Text <> " " Then
 
             consults = "Select *From Pacientes WHERE Nombre= '" & TextBuscadorCitas.Text & " '"
-            oda = New OleDbDataAdapter(consults, cadena)
+            odap = New OleDbDataAdapter(consults, cadena)
             ods = New DataSet
-            oda.Fill(ods, "Pacientes")
+            odap.Fill(ods, "Pacientes")
             check = ods.Tables("Pacientes").Rows.Count
 
             If check <> 0 Then
                 'DataGridView1.DataSource = ods
                 'DataGridView1.DataMenber = "Usuarios"
 
-                TextNom.Text = ods.Tables("Pacientes").Rows(0).Item("Nombre")
-                TextTel.Text = ods.Tables("Pacientes").Rows(0).Item("Telefono")
+                NombreCitas.Text = ods.Tables("Pacientes").Rows(0).Item("Nombre")
+                TelefonoCitas.Text = ods.Tables("Pacientes").Rows(0).Item("Telefono")
 
                 cadena.Close()
             Else
@@ -183,5 +183,9 @@ Public Class Citas
 
 
         End If
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
     End Sub
 End Class

@@ -28,17 +28,17 @@ Partial Class Citas
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextNom = New System.Windows.Forms.TextBox()
-        Me.TextMot = New System.Windows.Forms.TextBox()
-        Me.TextTel = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.CalendarioCitas = New System.Windows.Forms.DateTimePicker()
         Me.regresar = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TextBuscadorCitas = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.NombreCitas = New System.Windows.Forms.TextBox()
+        Me.TelefonoCitas = New System.Windows.Forms.TextBox()
+        Me.MotivoCitas = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -66,7 +66,7 @@ Partial Class Citas
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(49, 190)
+        Me.Label3.Location = New System.Drawing.Point(49, 187)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(52, 21)
         Me.Label3.TabIndex = 2
@@ -76,7 +76,7 @@ Partial Class Citas
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(49, 238)
+        Me.Label4.Location = New System.Drawing.Point(57, 231)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(63, 21)
         Me.Label4.TabIndex = 3
@@ -91,27 +91,6 @@ Partial Class Citas
         Me.Label5.Size = New System.Drawing.Size(104, 21)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "No. Telefono"
-        '
-        'TextNom
-        '
-        Me.TextNom.Location = New System.Drawing.Point(205, 95)
-        Me.TextNom.Name = "TextNom"
-        Me.TextNom.Size = New System.Drawing.Size(235, 23)
-        Me.TextNom.TabIndex = 5
-        '
-        'TextMot
-        '
-        Me.TextMot.Location = New System.Drawing.Point(205, 240)
-        Me.TextMot.Name = "TextMot"
-        Me.TextMot.Size = New System.Drawing.Size(235, 23)
-        Me.TextMot.TabIndex = 7
-        '
-        'TextTel
-        '
-        Me.TextTel.Location = New System.Drawing.Point(205, 141)
-        Me.TextTel.Name = "TextTel"
-        Me.TextTel.Size = New System.Drawing.Size(235, 23)
-        Me.TextTel.TabIndex = 8
         '
         'Button2
         '
@@ -143,12 +122,12 @@ Partial Class Citas
         Me.Button4.TabIndex = 12
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'DateTimePicker1
+        'CalendarioCitas
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(205, 190)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(235, 23)
-        Me.DateTimePicker1.TabIndex = 13
+        Me.CalendarioCitas.Location = New System.Drawing.Point(205, 187)
+        Me.CalendarioCitas.Name = "CalendarioCitas"
+        Me.CalendarioCitas.Size = New System.Drawing.Size(235, 23)
+        Me.CalendarioCitas.TabIndex = 13
         '
         'regresar
         '
@@ -166,7 +145,7 @@ Partial Class Citas
         Me.DataGridView1.Location = New System.Drawing.Point(455, 19)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 25
-        Me.DataGridView1.Size = New System.Drawing.Size(279, 292)
+        Me.DataGridView1.Size = New System.Drawing.Size(475, 394)
         Me.DataGridView1.TabIndex = 15
         '
         'TextBuscadorCitas
@@ -185,23 +164,44 @@ Partial Class Citas
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Buscador"
         '
+        'NombreCitas
+        '
+        Me.NombreCitas.Location = New System.Drawing.Point(205, 99)
+        Me.NombreCitas.Name = "NombreCitas"
+        Me.NombreCitas.Size = New System.Drawing.Size(224, 23)
+        Me.NombreCitas.TabIndex = 18
+        '
+        'TelefonoCitas
+        '
+        Me.TelefonoCitas.Location = New System.Drawing.Point(205, 143)
+        Me.TelefonoCitas.Name = "TelefonoCitas"
+        Me.TelefonoCitas.Size = New System.Drawing.Size(224, 23)
+        Me.TelefonoCitas.TabIndex = 19
+        '
+        'MotivoCitas
+        '
+        Me.MotivoCitas.Location = New System.Drawing.Point(205, 233)
+        Me.MotivoCitas.Name = "MotivoCitas"
+        Me.MotivoCitas.Size = New System.Drawing.Size(224, 23)
+        Me.MotivoCitas.TabIndex = 20
+        '
         'Citas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(782, 511)
+        Me.ClientSize = New System.Drawing.Size(957, 491)
+        Me.Controls.Add(Me.MotivoCitas)
+        Me.Controls.Add(Me.TelefonoCitas)
+        Me.Controls.Add(Me.NombreCitas)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBuscadorCitas)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.regresar)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.CalendarioCitas)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TextTel)
-        Me.Controls.Add(Me.TextMot)
-        Me.Controls.Add(Me.TextNom)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -222,15 +222,18 @@ Partial Class Citas
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextNom As TextBox
-    Friend WithEvents TextMot As TextBox
-    Friend WithEvents TextTel As TextBox
+    Friend WithEvents TextNomCitas As TextBox
+    Friend WithEvents TextMotCitas As TextBox
+    Friend WithEvents TextTelCitas As TextBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents CalendarioCitas As DateTimePicker
     Friend WithEvents regresar As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TextBuscadorCitas As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents NombreCitas As TextBox
+    Friend WithEvents TelefonoCitas As TextBox
+    Friend WithEvents MotivoCitas As TextBox
 End Class

@@ -35,7 +35,8 @@ Public Class Pacientes
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        cadena.ConnectionString = ("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Base de datos Proyecto.accdb")
+        Dim cadena1 As OleDbConnection = cadena
+        cadena1.ConnectionString = ("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Base de datos Proyecto.accdb")
 
         Dim consults As String
         Dim oda As New OleDbDataAdapter
@@ -43,9 +44,9 @@ Public Class Pacientes
         Dim check As Byte
 
 
-        If TextBox1.Text <> " " Then
+        If PacienteNuevo.Text <> " " Then
 
-            consults = "Select *From Pacientes WHERE Nombre= '" & TextBox1.Text & " '"
+            consults = "Select *From Pacientes WHERE Nombre= '" & PacienteNuevo.Text & " '"
             oda = New OleDbDataAdapter(consults, cadena)
             ods = New DataSet
             oda.Fill(ods, "Pacientes")
@@ -57,17 +58,18 @@ Public Class Pacientes
                 '_________________________
 
                 '"',Nombre='" & TextNombre.Text &
-                If TextBox1.Text <> " " Then
+                If PacienteNuevo.Text <> " " Then
 
                     Try
                         cadena.Open()
-                        actualizar = "Update Pacientes SET Nombre ='" & TextBox1.Text &
-                            "',Documento='" & TextDPI.Text &
-                            "',Fecha='" & TextBox2.Text &
-                            "',Edad='" & TextBox3.Text &
-                            "',Sexo='" & ComboBox1.Text &
-                            "',Telefono='" & TextBox5.Text &
-                            "' Direccion='" & TextBox6.Text & "'"
+                        actualizar = "Update Pacientes SET Nombre ='" & PacienteNuevo.Text &
+                             "',Nombre='" & PacienteNuevo.Text &
+                            "',DPI='" & DocumentoPersonal.Text &
+                            "',Fecha='" & FechaInicio.Text &
+                            "',Edad='" & EdadPaciente.Text &
+                            "',Sexo='" & GeneroPaciente.Text &
+                            "',Telefono='" & NumeroTelefono.Text &
+                            "',Direccion='" & DireccionPaciente.Text & "'"
 
                         comando = New OleDbCommand(actualizar, cadena)
                         comando.ExecuteNonQuery()
@@ -87,11 +89,11 @@ Public Class Pacientes
                 cadena.Close()
             Else
 
-                If (TextBox1.Text <> "") Then
+                If (PacienteNuevo.Text <> "") Then
 
                     Try
                         con.Open()
-                        sql = "INSERT INTO Pacientes (Nombre,Documento,Fecha,Edad,sexo, Telefono, Direccion) values ('" & TextBox1.Text & "', '" & TextDPI.Text & "', '" & TextBox2.Text & "', '" & TextBox3.Text & "', '" & ComboBox1.Text & "', '" & TextBox5.Text & "' , '" & TextBox6.Text & "' );"
+                        sql = "INSERT INTO Pacientes (Nombre,DPI,Fecha,Edad,sexo, Telefono, Direccion) values ('" & PacienteNuevo.Text & "', '" & DocumentoPersonal.Text & "', '" & FechaInicio.Text & "', '" & EdadPaciente.Text & "', '" & GeneroPaciente.Text & "', '" & NumeroTelefono.Text & "' , '" & DireccionPaciente.Text & "' );"
                         cmd.Connection = con
                         cmd.CommandText = sql
 
@@ -133,13 +135,15 @@ Public Class Pacientes
         Me.Refresh()
         limpiar()
     End Sub
+
     Private Sub limpiar()
-        TextBox1.Clear()
-        TextDPI.Clear()
-        TextBox2.Clear()
-        TextBox3.Clear()
-        TextBox5.Clear()
-        TextBox6.Clear()
+        PacienteNuevo.Clear()
+        DocumentoPersonal.Clear()
+        FechaInicio.Clear()
+        GeneroPaciente.Items.Clear()
+        EdadPaciente.Clear()
+        NumeroTelefono.Clear()
+        DireccionPaciente.Clear()
     End Sub
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim MenuP As New MenuP

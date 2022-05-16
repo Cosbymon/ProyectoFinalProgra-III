@@ -4,6 +4,7 @@
     Dim Pacientes As New Pacientes
     Dim FichaAdulto As New FichaAdulto
     Dim FichaNiños As New FichaNiños
+    Dim Reportes As New Reportes
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Usuario.Show()
         Me.Hide()
@@ -33,6 +34,11 @@
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         FichaNiños.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Reportes.Show()
         Me.Hide()
     End Sub
 End Class

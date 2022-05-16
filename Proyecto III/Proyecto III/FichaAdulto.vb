@@ -183,6 +183,7 @@ Public Class FichaAdulto
                 'DataGridView1.DataSource = ods
                 'DataGridView1.DataMenber = "Usuarios"
 
+
                 TextBox1.Text = ods.Tables("Pacientes").Rows(0).Item("Nombre")
                 TextBox2.Text = ods.Tables("Pacientes").Rows(0).Item("Edad")
                 TextBox3.Text = ods.Tables("Pacientes").Rows(0).Item("Sexo")

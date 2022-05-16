@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MenuP
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class MenuP
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MenuP))
         Me.Button1 = New System.Windows.Forms.Button()
@@ -166,9 +166,9 @@ Partial Class MenuP
         '
         Me.Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), System.Drawing.Image)
         Me.Button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button7.Location = New System.Drawing.Point(192, 606)
+        Me.Button7.Location = New System.Drawing.Point(153, 583)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(76, 60)
+        Me.Button7.Size = New System.Drawing.Size(115, 83)
         Me.Button7.TabIndex = 12
         Me.Button7.UseVisualStyleBackColor = True
         '
@@ -188,7 +188,7 @@ Partial Class MenuP
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(937, 756)
+        Me.ClientSize = New System.Drawing.Size(1065, 756)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)

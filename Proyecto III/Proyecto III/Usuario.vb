@@ -155,43 +155,6 @@ Public Class Usuario
     End Sub
 
     Private Sub TextBuscar_Click(sender As Object, e As EventArgs) Handles TextBuscar.Click
-        cadena.ConnectionString = ("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Cosby\OneDrive\Documentos\ProyectoFinalProgra III\Base de datos Proyecto.accdb")
-        cadena.Open()
-
-        Dim consults As String
-        Dim oda As New OleDbDataAdapter
-        Dim ods As DataSet
-        Dim check As Byte
-
-        If TextBusqueda.Text <> " " Then
-
-            consults = "Select *From Usuarios WHERE Usuario= '" & TextBusqueda.Text & " '"
-            oda = New OleDbDataAdapter(consults, cadena)
-            ods = New DataSet
-            oda.Fill(ods, "Usuarios")
-            check = ods.Tables("Usuarios").Rows.Count
-
-            If check <> 0 Then
-                'DataGridView1.DataSource = ods
-                'DataGridView1.DataMenber = "Usuarios"
-
-                TextNombre.Text = ods.Tables("Usuarios").Rows(0).Item("Nombre")
-                TextUsuario.Text = ods.Tables("Usuarios").Rows(0).Item("Usuario")
-                TextContraseña.Text = ods.Tables("Usuarios").Rows(0).Item("Contraseña")
-                TexttipoUser.Text = ods.Tables("Usuarios").Rows(0).Item("TipoDeUsuario")
-
-                cadena.Close()
-                btneditar.Enabled = True
-            Else
-                'MsgBox("No Existe el Registro", vbCritical, "Aviso")
-                cadena.Close()
-            End If
-
-
-        End If
-    End Sub
-
-    Private Sub Usuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

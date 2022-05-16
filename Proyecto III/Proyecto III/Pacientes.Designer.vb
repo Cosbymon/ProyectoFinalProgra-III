@@ -30,19 +30,19 @@ Partial Class Pacientes
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.PacienteNuevo = New System.Windows.Forms.TextBox()
+        Me.FechaInicio = New System.Windows.Forms.TextBox()
+        Me.EdadPaciente = New System.Windows.Forms.TextBox()
+        Me.NumeroTelefono = New System.Windows.Forms.TextBox()
+        Me.DireccionPaciente = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.GeneroPaciente = New System.Windows.Forms.ComboBox()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextDPI = New System.Windows.Forms.TextBox()
+        Me.DocumentoPersonal = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -117,40 +117,40 @@ Partial Class Pacientes
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Direccion"
         '
-        'TextBox1
+        'PacienteNuevo
         '
-        Me.TextBox1.Location = New System.Drawing.Point(249, 59)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(299, 23)
-        Me.TextBox1.TabIndex = 7
+        Me.PacienteNuevo.Location = New System.Drawing.Point(249, 63)
+        Me.PacienteNuevo.Name = "PacienteNuevo"
+        Me.PacienteNuevo.Size = New System.Drawing.Size(299, 23)
+        Me.PacienteNuevo.TabIndex = 7
         '
-        'TextBox2
+        'FechaInicio
         '
-        Me.TextBox2.Location = New System.Drawing.Point(249, 132)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(299, 23)
-        Me.TextBox2.TabIndex = 8
+        Me.FechaInicio.Location = New System.Drawing.Point(249, 132)
+        Me.FechaInicio.Name = "FechaInicio"
+        Me.FechaInicio.Size = New System.Drawing.Size(299, 23)
+        Me.FechaInicio.TabIndex = 8
         '
-        'TextBox3
+        'EdadPaciente
         '
-        Me.TextBox3.Location = New System.Drawing.Point(249, 176)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(299, 23)
-        Me.TextBox3.TabIndex = 9
+        Me.EdadPaciente.Location = New System.Drawing.Point(249, 176)
+        Me.EdadPaciente.Name = "EdadPaciente"
+        Me.EdadPaciente.Size = New System.Drawing.Size(299, 23)
+        Me.EdadPaciente.TabIndex = 9
         '
-        'TextBox5
+        'NumeroTelefono
         '
-        Me.TextBox5.Location = New System.Drawing.Point(249, 263)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(299, 23)
-        Me.TextBox5.TabIndex = 11
+        Me.NumeroTelefono.Location = New System.Drawing.Point(249, 263)
+        Me.NumeroTelefono.Name = "NumeroTelefono"
+        Me.NumeroTelefono.Size = New System.Drawing.Size(299, 23)
+        Me.NumeroTelefono.TabIndex = 11
         '
-        'TextBox6
+        'DireccionPaciente
         '
-        Me.TextBox6.Location = New System.Drawing.Point(249, 301)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(299, 23)
-        Me.TextBox6.TabIndex = 12
+        Me.DireccionPaciente.Location = New System.Drawing.Point(249, 301)
+        Me.DireccionPaciente.Name = "DireccionPaciente"
+        Me.DireccionPaciente.Size = New System.Drawing.Size(299, 23)
+        Me.DireccionPaciente.TabIndex = 12
         '
         'Button1
         '
@@ -182,14 +182,14 @@ Partial Class Pacientes
         Me.Button5.TabIndex = 17
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'GeneroPaciente
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Masculino ", "Femenino"})
-        Me.ComboBox1.Location = New System.Drawing.Point(249, 223)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 23)
-        Me.ComboBox1.TabIndex = 45
+        Me.GeneroPaciente.FormattingEnabled = True
+        Me.GeneroPaciente.Items.AddRange(New Object() {"Masculino ", "Femenino"})
+        Me.GeneroPaciente.Location = New System.Drawing.Point(249, 223)
+        Me.GeneroPaciente.Name = "GeneroPaciente"
+        Me.GeneroPaciente.Size = New System.Drawing.Size(121, 23)
+        Me.GeneroPaciente.TabIndex = 45
         '
         'Button6
         '
@@ -214,18 +214,19 @@ Partial Class Pacientes
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label8.Location = New System.Drawing.Point(61, 100)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(25, 15)
+        Me.Label8.Size = New System.Drawing.Size(35, 21)
         Me.Label8.TabIndex = 48
         Me.Label8.Text = "DPI"
         '
-        'TextDPI
+        'DocumentoPersonal
         '
-        Me.TextDPI.Location = New System.Drawing.Point(249, 92)
-        Me.TextDPI.Name = "TextDPI"
-        Me.TextDPI.Size = New System.Drawing.Size(299, 23)
-        Me.TextDPI.TabIndex = 49
+        Me.DocumentoPersonal.Location = New System.Drawing.Point(249, 92)
+        Me.DocumentoPersonal.Name = "DocumentoPersonal"
+        Me.DocumentoPersonal.Size = New System.Drawing.Size(299, 23)
+        Me.DocumentoPersonal.TabIndex = 49
         '
         'Button3
         '
@@ -244,19 +245,19 @@ Partial Class Pacientes
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(1100, 468)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.TextDPI)
+        Me.Controls.Add(Me.DocumentoPersonal)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.GeneroPaciente)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.DireccionPaciente)
+        Me.Controls.Add(Me.NumeroTelefono)
+        Me.Controls.Add(Me.EdadPaciente)
+        Me.Controls.Add(Me.FechaInicio)
+        Me.Controls.Add(Me.PacienteNuevo)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -279,18 +280,18 @@ Partial Class Pacientes
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents PacienteNuevo As TextBox
+    Friend WithEvents FechaInicio As TextBox
+    Friend WithEvents EdadPaciente As TextBox
+    Friend WithEvents NumeroTelefono As TextBox
+    Friend WithEvents DireccionPaciente As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents GeneroPaciente As ComboBox
     Friend WithEvents Button6 As Button
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextDPI As TextBox
+    Friend WithEvents DocumentoPersonal As TextBox
     Friend WithEvents Button3 As Button
 End Class
